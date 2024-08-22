@@ -17,6 +17,10 @@ class my_callback extends A;
    endfunction
 
    `uvm_object_utils(my_callback)
+
+   function new(string name = "my_callback");
+      super.new(name);
+   endfunction    
 endclass
 
 class my_case0 extends base_test;
@@ -39,7 +43,7 @@ function void my_case0::connect_phase(uvm_phase phase);
    super.connect_phase(phase);
 
    my_cb = my_callback::type_id::create("my_cb");
-   A_pool::add(env.i_agt.drv, my_cb);
+   uvm_callbacks#(my_driver, A)::add(env.i_agt.drv, my_cb);
 endfunction
 
 `endif

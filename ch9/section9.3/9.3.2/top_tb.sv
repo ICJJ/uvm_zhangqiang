@@ -2,6 +2,7 @@
 `include "uvm_macros.svh"
 
 import uvm_pkg::*;
+`include "dut.sv"
 `include "my_if.sv"
 `include "bus_if.sv"
 `include "my_transaction.sv"
@@ -72,9 +73,11 @@ initial begin
    uvm_config_db#(virtual bus_if#(16, 16))::set(null, "uvm_test_top.env.bus_agt.mon", "vif", b_if);
 end
 
-initial begin
-   $dumpfile("top_tb.vcd");
-   $dumpvars(0, top_tb);
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
 end
 
 endmodule

@@ -74,5 +74,12 @@ initial begin
    uvm_config_db#(virtual bus_if)::set(null, "uvm_test_top.env.bus_agt.drv", "vif", b_if);
    uvm_config_db#(virtual bus_if)::set(null, "uvm_test_top.env.bus_agt.mon", "vif", b_if);
 end
+           
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
 
 endmodule

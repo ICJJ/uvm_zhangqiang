@@ -12,6 +12,9 @@ class heartbeat_sequence extends uvm_sequence #(my_transaction);
       while(1) begin
          repeat(100) @(posedge p_sequencer.vif.clk);
          grab();
+      `ifdef UVM_VERSION_1_2
+        starting_phase=get_starting_phase();
+     `endif
          starting_phase.raise_objection(this);
          `uvm_do_with(heartbeat_tr, {heartbeat_tr.pload.size == 50;})
          `uvm_info("hb_seq", "this is a heartbeat transaction", UVM_MEDIUM)

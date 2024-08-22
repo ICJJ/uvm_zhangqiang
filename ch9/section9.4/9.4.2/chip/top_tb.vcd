@@ -1,0 +1,991 @@
+$date
+	Thu Aug 22 19:51:15 2024
+$end
+
+$version
+	Synopsys VCS version O-2018.09-1_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 1342dc8f6cd5c2c1 $end
+
+
+$scope module top_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 8 # rxd [7:0] $end
+$var reg 1 $ rx_dv $end
+$var wire 8 % txd [7:0] $end
+$var wire 1 & tx_en $end
+
+$scope begin unnamed$$_vcs_4 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_0 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_2 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_3 $end
+$upscope $end
+
+
+$scope module input_if_A $end
+$var wire 1 ' clk $end
+$var wire 1 ( rst_n $end
+$var reg 8 ) data [7:0] $end
+$var reg 1 * valid $end
+$upscope $end
+
+
+$scope module output_if_A $end
+$var wire 1 + clk $end
+$var wire 1 , rst_n $end
+$var reg 8 - data [7:0] $end
+$var reg 1 . valid $end
+$upscope $end
+
+
+$scope module output_if_B $end
+$var wire 1 / clk $end
+$var wire 1 0 rst_n $end
+$var reg 8 1 data [7:0] $end
+$var reg 1 2 valid $end
+$upscope $end
+
+
+$scope module output_if_C $end
+$var wire 1 3 clk $end
+$var wire 1 4 rst_n $end
+$var reg 8 5 data [7:0] $end
+$var reg 1 6 valid $end
+$upscope $end
+
+
+$scope module b_if $end
+$var wire 1 7 clk $end
+$var wire 1 8 rst_n $end
+$var reg 1 9 bus_cmd_valid $end
+$var reg 1 : bus_op $end
+$var reg 16 ; bus_addr [15:0] $end
+$var reg 16 < bus_wr_data [15:0] $end
+$var reg 16 = bus_rd_data [15:0] $end
+$upscope $end
+
+
+$scope module my_dut $end
+$var wire 8 > data0 [7:0] $end
+$var wire 1 ? dv0 $end
+$var wire 8 @ data1 [7:0] $end
+$var wire 1 A dv1 $end
+$var wire 1 B clk $end
+$var wire 1 C rst_n $end
+$var wire 1 D bus_cmd_valid $end
+$var wire 1 E bus_op $end
+$var wire 16 F bus_addr [15:0] $end
+$var wire 16 G bus_wr_data [15:0] $end
+$var wire 16 H bus_rd_data [15:0] $end
+$var wire 8 I rxd [7:0] $end
+$var wire 1 J rx_dv $end
+$var wire 8 K txd [7:0] $end
+$var wire 1 L tx_en $end
+$var wire 1 M bus_cmd_valid_slv0 $end
+$var wire 1 N bus_op_slv0 $end
+$var wire 16 O bus_addr_slv0 [15:0] $end
+$var wire 16 P bus_wr_data_slv0 [15:0] $end
+$var wire 16 Q bus_rd_data_slv0 [15:0] $end
+$var wire 1 R bus_cmd_valid_slv1 $end
+$var wire 1 S bus_op_slv1 $end
+$var wire 16 T bus_addr_slv1 [15:0] $end
+$var wire 16 U bus_wr_data_slv1 [15:0] $end
+$var wire 16 V bus_rd_data_slv1 [15:0] $end
+$var wire 1 W bus_cmd_valid_slv2 $end
+$var wire 1 X bus_op_slv2 $end
+$var wire 16 Y bus_addr_slv2 [15:0] $end
+$var wire 16 Z bus_wr_data_slv2 [15:0] $end
+$var wire 16 [ bus_rd_data_slv2 [15:0] $end
+
+$scope module dut_A $end
+$var wire 1 B clk $end
+$var wire 1 C rst_n $end
+$var wire 1 M bus_cmd_valid $end
+$var wire 1 N bus_op $end
+$var wire 16 O bus_addr [15:0] $end
+$var wire 16 P bus_wr_data [15:0] $end
+$var reg 16 \ bus_rd_data [15:0] $end
+$var wire 8 I rxd [7:0] $end
+$var wire 1 J rx_dv $end
+$var reg 8 ] txd [7:0] $end
+$var reg 1 ^ tx_en $end
+$var reg 1 _ invert $end
+$upscope $end
+
+
+$scope module dut_B $end
+$var wire 1 B clk $end
+$var wire 1 C rst_n $end
+$var wire 1 R bus_cmd_valid $end
+$var wire 1 S bus_op $end
+$var wire 16 T bus_addr [15:0] $end
+$var wire 16 U bus_wr_data [15:0] $end
+$var reg 16 ` bus_rd_data [15:0] $end
+$var wire 8 > rxd [7:0] $end
+$var wire 1 ? rx_dv $end
+$var reg 8 a txd [7:0] $end
+$var reg 1 b tx_en $end
+$var reg 1 c invert $end
+$upscope $end
+
+
+$scope module dut_C $end
+$var wire 1 B clk $end
+$var wire 1 C rst_n $end
+$var wire 1 W bus_cmd_valid $end
+$var wire 1 X bus_op $end
+$var wire 16 Y bus_addr [15:0] $end
+$var wire 16 Z bus_wr_data [15:0] $end
+$var reg 16 d bus_rd_data [15:0] $end
+$var wire 8 @ rxd [7:0] $end
+$var wire 1 A rx_dv $end
+$var reg 8 e txd [7:0] $end
+$var reg 1 f tx_en $end
+$var reg 1 g invert $end
+$upscope $end
+
+
+$scope module arbitor_inst $end
+$var wire 1 B clk $end
+$var wire 1 C rst_n $end
+$var wire 1 D bus_cmd_valid_mst $end
+$var wire 1 E bus_op_mst $end
+$var wire 16 F bus_addr_mst [15:0] $end
+$var wire 16 G bus_wr_data_mst [15:0] $end
+$var wire 16 H bus_rd_data_mst [15:0] $end
+$var wire 1 M bus_cmd_valid_slv0 $end
+$var wire 1 N bus_op_slv0 $end
+$var wire 16 O bus_addr_slv0 [15:0] $end
+$var wire 16 P bus_wr_data_slv0 [15:0] $end
+$var wire 16 Q bus_rd_data_slv0 [15:0] $end
+$var wire 1 R bus_cmd_valid_slv1 $end
+$var wire 1 S bus_op_slv1 $end
+$var wire 16 T bus_addr_slv1 [15:0] $end
+$var wire 16 U bus_wr_data_slv1 [15:0] $end
+$var wire 16 V bus_rd_data_slv1 [15:0] $end
+$var wire 1 W bus_cmd_valid_slv2 $end
+$var wire 1 X bus_op_slv2 $end
+$var wire 16 Y bus_addr_slv2 [15:0] $end
+$var wire 16 Z bus_wr_data_slv2 [15:0] $end
+$var wire 16 [ bus_rd_data_slv2 [15:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+x$
+z&
+bxxxxxxxx #
+bzzzzzzzz %
+bxxxxxxxx )
+bxxxxxxxx -
+bxxxxxxxx 1
+bxxxxxxxx 5
+bxxxxxxxxxxxxxxxx =
+b0000000000000000 <
+b0000000000000000 ;
+0M
+0R
+0W
+x^
+xc
+xb
+xg
+xf
+x_
+b0000000000000000 O
+b0000000000000000 T
+b0000000000000000 Y
+bxxxxxxxxxxxxxxxx Q
+bxxxxxxxxxxxxxxxx V
+bxxxxxxxxxxxxxxxx [
+b0000000000000000 P
+b0000000000000000 U
+b0000000000000000 Z
+bxxxxxxxxxxxxxxxx \
+bxxxxxxxx ]
+bxxxxxxxxxxxxxxxx `
+bxxxxxxxx a
+bxxxxxxxxxxxxxxxx d
+bxxxxxxxx e
+0'
+0+
+0/
+03
+07
+0B
+0(
+0,
+00
+04
+08
+0C
+0E
+0N
+0S
+0X
+b0000000000000000 F
+b0000000000000000 G
+bxxxxxxxxxxxxxxxx H
+bxxxxxxxx I
+bxxxxxxxx K
+0D
+xJ
+xL
+x*
+x.
+x2
+x6
+09
+0:
+bxxxxxxxx >
+x?
+bxxxxxxxx @
+xA
+$end
+#100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+b00000000 ]
+b00000000 >
+b00000000 -
+0^
+0?
+0.
+0_
+b0000000000000000 \
+b0000000000000000 Q
+b00000000 a
+b00000000 @
+b00000000 1
+0b
+0A
+02
+0c
+b0000000000000000 `
+b0000000000000000 V
+b00000000 e
+b00000000 K
+b00000000 5
+0f
+0L
+06
+0g
+b0000000000000000 d
+b0000000000000000 [
+b0000000000000000 H
+b0000000000000000 =
+#200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#1000000
+1"
+1(
+1,
+10
+14
+18
+1C
+0!
+0'
+0+
+0/
+03
+07
+0B
+#1100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+bxxxxxxxx ]
+bxxxxxxxx >
+bxxxxxxxx -
+x^
+x?
+x.
+#1200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#1300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+b0000000000001001 ;
+b0000000000001001 F
+b0000000000001001 Y
+b0000000000001001 T
+b0000000000001001 O
+19
+1D
+1M
+bxxxxxxxx a
+bxxxxxxxx @
+bxxxxxxxx 1
+xb
+xA
+x2
+#1400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#1500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0M
+bxxxxxxxx e
+bxxxxxxxx K
+bxxxxxxxx 5
+xf
+xL
+x6
+#1600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#1700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#1800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#1900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1M
+1:
+1E
+1N
+1S
+1X
+b0000000000000001 <
+b0000000000000001 G
+b0000000000000001 Z
+b0000000000000001 U
+b0000000000000001 P
+#2000000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#2100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0M
+1_
+#2200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#2300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#2400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#2500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1M
+0:
+0E
+0N
+0S
+0X
+b0000000000000000 <
+b0000000000000000 G
+b0000000000000000 Z
+b0000000000000000 U
+b0000000000000000 P
+#2600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#2700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0M
+b0000000000000001 \
+b0000000000000001 Q
+b0000000000000001 H
+b0000000000000001 =
+#2800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#2900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#3000000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#3100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+b0100000000001001 ;
+b0100000000001001 F
+b0000000000000000 H
+b0000000000000000 =
+19
+1D
+1R
+#3200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#3300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0R
+#3400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#3500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#3600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#3700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1R
+1:
+1E
+1N
+1S
+1X
+b0000000000000001 <
+b0000000000000001 G
+b0000000000000001 Z
+b0000000000000001 U
+b0000000000000001 P
+#3800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#3900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0R
+1c
+#4000000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#4100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#4200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#4300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1R
+0:
+0E
+0N
+0S
+0X
+b0000000000000000 <
+b0000000000000000 G
+b0000000000000000 Z
+b0000000000000000 U
+b0000000000000000 P
+#4400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#4500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0R
+b0000000000000001 `
+b0000000000000001 V
+b0000000000000001 H
+b0000000000000001 =
+#4600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#4700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#4800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#4900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+b1000000000001001 ;
+b1000000000001001 F
+b0000000000000000 H
+b0000000000000000 =
+19
+1D
+1W
+#5000000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#5100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0W
+#5200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#5300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#5400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#5500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1W
+1:
+1E
+1N
+1S
+1X
+b0000000000000001 <
+b0000000000000001 G
+b0000000000000001 Z
+b0000000000000001 U
+b0000000000000001 P
+#5600000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#5700000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0W
+1g
+#5800000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#5900000
+1!
+1'
+1+
+1/
+13
+17
+1B
+#6000000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#6100000
+1!
+1'
+1+
+1/
+13
+17
+1B
+19
+1D
+1W
+0:
+0E
+0N
+0S
+0X
+b0000000000000000 <
+b0000000000000000 G
+b0000000000000000 Z
+b0000000000000000 U
+b0000000000000000 P
+#6200000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#6300000
+1!
+1'
+1+
+1/
+13
+17
+1B
+09
+0D
+0W
+b0000000000000001 d
+b0000000000000001 [
+b0000000000000001 H
+b0000000000000001 =
+#6400000
+0!
+0'
+0+
+0/
+03
+07
+0B
+#6500000
+1!
+1'
+1+
+1/
+13
+17
+1B
+b00000000 )
+b00000000 I
+0*
+0J

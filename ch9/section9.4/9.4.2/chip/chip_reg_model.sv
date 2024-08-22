@@ -28,6 +28,11 @@ class chip_reg_model extends uvm_reg_block;
    endfunction
 
    `uvm_object_utils(chip_reg_model)
+
+   function new(string name = "my_transaction");
+      super.new();
+   endfunction
+
 endclass
 
 `endif

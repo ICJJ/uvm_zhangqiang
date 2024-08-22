@@ -8,6 +8,9 @@ class case0_sequence extends uvm_sequence #(my_transaction);
    endfunction 
    
    virtual task body();
+      `ifdef UVM_VERSION_1_2
+        starting_phase=get_starting_phase();
+     `endif
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
       repeat (10) begin

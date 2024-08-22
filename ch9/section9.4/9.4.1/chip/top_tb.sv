@@ -2,6 +2,7 @@
 `include "uvm_macros.svh"
 
 import uvm_pkg::*;
+`include "dut.sv"
 `include "chip_dut.sv"
 `include "../ip/my_if.sv"
 `include "../ip/my_transaction.sv"
@@ -67,9 +68,11 @@ initial begin
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.env_C.o_agt.mon", "vif", output_if_C);
 end
 
-initial begin
-   $dumpfile("top_tb.vcd");
-   $dumpvars(0, top_tb);
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
 end
 
 endmodule

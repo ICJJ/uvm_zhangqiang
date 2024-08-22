@@ -58,4 +58,11 @@ initial begin
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.i_agt.sqr", "vif", input_if);
 end
 
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
+
 endmodule

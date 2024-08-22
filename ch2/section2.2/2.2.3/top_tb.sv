@@ -39,4 +39,11 @@ initial begin
    run_test("my_driver");
 end
 
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
+
 endmodule

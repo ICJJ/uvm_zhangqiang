@@ -2,6 +2,7 @@
 `include "uvm_macros.svh"
 
 import uvm_pkg::*;
+`include "dut.sv"
 `include "my_if.sv"
 `include "my_transaction.sv"
 `include "ip_transaction.sv"
@@ -55,6 +56,13 @@ initial begin
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.i_agt.drv", "vif", input_if);
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.i_agt.mon", "vif", input_if);
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.o_agt.mon", "vif", output_if);
+end
+
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
 end
 
 endmodule

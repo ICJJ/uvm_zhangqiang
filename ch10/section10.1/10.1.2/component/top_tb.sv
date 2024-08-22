@@ -2,6 +2,7 @@
 `include "uvm_macros.svh"
 
 import uvm_pkg::*;
+`include "dut.sv"
 `include "my_if.sv"
 `include "clk_if.sv"
 `include "clk_model.sv"
@@ -50,6 +51,13 @@ initial begin
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.i_agt.mon", "vif", input_if);
    uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.env.o_agt.mon", "vif", output_if);
    uvm_config_db#(virtual clk_if)::set(null, "uvm_test_top.env.clk_sys", "vif", cif);
+end
+
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
 end
 
 endmodule

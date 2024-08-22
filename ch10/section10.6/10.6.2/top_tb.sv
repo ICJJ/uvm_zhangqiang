@@ -63,4 +63,11 @@ initial begin
    if_obj.output_vif1 = output_if1;
 end
 
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
+
 endmodule

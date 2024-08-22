@@ -77,9 +77,11 @@ initial begin
    uvm_config_db#(virtual backdoor_if)::set(null, "uvm_test_top", "vif", bk_if);
 end
 
-initial begin
-   $dumpfile("top_tb.vcd");
-   $dumpvars(0, top_tb);
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
 end
 
 endmodule

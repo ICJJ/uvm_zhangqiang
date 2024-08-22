@@ -8,6 +8,9 @@ class ip_sequence extends uvm_sequence #(ip_transaction);
    endfunction 
    
    virtual task pre_body();
+      `ifdef UVM_VERSION_1_2
+        starting_phase=get_starting_phase();
+     `endif
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
    endtask

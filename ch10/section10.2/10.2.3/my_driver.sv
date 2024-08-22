@@ -31,7 +31,7 @@ task my_driver::main_phase(uvm_phase phase);
    while(!vif.rst_n)
       @(posedge vif.clk);
    while(1) begin
-      uvm_wait_for_nba_region();
+      // uvm_wait_for_nba_region();
       seq_item_port.try_next_item(req);
       if(req == null) begin
          drive_idle();

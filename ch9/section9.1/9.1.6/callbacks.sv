@@ -20,9 +20,13 @@ class A extends uvm_callback;
       end 
       phase.drop_objection(drv);
    endtask
-endclass
 
-typedef uvm_callbacks#(my_driver, A) A_pool;
+   function new(string name = "A");
+      super.new(name);
+   endfunction  
+  
+
+endclass
 
 
 `endif

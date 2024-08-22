@@ -57,4 +57,11 @@ initial begin
    `uvm_info("top_tb", "use wildchar in top_tb's config_db::set!", UVM_LOW)
 end
 
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
+
 endmodule

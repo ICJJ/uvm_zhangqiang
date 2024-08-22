@@ -42,4 +42,11 @@ initial begin
    rst_n = 1'b1;
 end
 
+initial
+begin
+  //fsdb
+  $fsdbDumpfile("top.fsdb");
+  $fsdbDumpvars();
+end
+
 endmodule
