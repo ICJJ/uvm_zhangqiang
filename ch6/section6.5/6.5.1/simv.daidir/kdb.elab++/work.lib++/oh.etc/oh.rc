@@ -1,6 +1,0 @@
-@elabcom rc file Version 1.0
-[oh]
-invokeDir = /home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.1
-hostCommand = -lib /home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.1/simv.daidir/work -saveLevel -elab /home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.1/simv.daidir/kdb -simflow -simdir /home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.1/simv.daidir/kdb_libs -top "uvm_custom_install_record\
-ing uvm_custom_install_verdi_recording top_tb" -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389 -SNPS_ELABCOM -saveElab
-simType = VCS
