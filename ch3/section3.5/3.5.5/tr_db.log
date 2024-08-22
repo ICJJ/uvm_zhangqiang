@@ -1,1 +1,0 @@
-  CREATE_STREAM @0 {NAME:case0_sequence T:Transactions SCOPE:uvm_test_top.env.i_agt.sqr STREAM:1414}
