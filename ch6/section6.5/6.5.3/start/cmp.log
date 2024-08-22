@@ -1,0 +1,18 @@
+Command: vcs -full64 -sverilog -ntb_opts uvm-1.2 -q top_tb.sv -l cmp.log -o simv \
+-debug_access+all -kdb -lca -timescale=1ns/1ps -P /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/novas.tab \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a +incdir+./ +incdir+../../dut \
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+9 modules and 0 UDP read.
+make[1]: Entering directory '/home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.3/start/csrc' \
+
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+../simv up to date
+make[1]: Leaving directory '/home/ICer/ic_prjs/uvm/ch6/section6.5/6.5.3/start/csrc' \
+
