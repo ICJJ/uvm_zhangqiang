@@ -1,7 +1,7 @@
 
 INCDIR = +incdir+./ 
 
-INCDIR += +incdir+../../../dut 
+INCDIR += +incdir+../dut 
 
 SIM_ARG = 
 

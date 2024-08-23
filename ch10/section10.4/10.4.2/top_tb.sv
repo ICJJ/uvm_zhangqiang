@@ -2,6 +2,7 @@
 `include "uvm_macros.svh"
 
 import uvm_pkg::*;
+`include "dut.sv"
 `include "my_if.sv"
 `include "bus_if.sv"
 `include "my_transaction.sv"

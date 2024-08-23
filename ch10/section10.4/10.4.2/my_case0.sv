@@ -61,6 +61,9 @@ class case0_vseq extends uvm_sequence;
       case0_sequence dseq;
       uvm_status_e   status;
       uvm_reg_data_t value;
+      `ifdef UVM_VERSION_1_2
+        starting_phase=get_starting_phase();
+     `endif
       if(starting_phase != null) 
          starting_phase.raise_objection(this);
       #10000;
